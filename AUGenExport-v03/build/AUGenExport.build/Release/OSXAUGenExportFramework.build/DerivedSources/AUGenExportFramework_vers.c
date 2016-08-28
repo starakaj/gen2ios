@@ -1,0 +1,1 @@
+ const unsigned char AUGenExportFrameworkVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:AUGenExportFramework  PROJECT:AUGenExport-1" "\n"; const double AUGenExportFrameworkVersionNumber __attribute__ ((used)) = (double)1.;

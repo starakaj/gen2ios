@@ -1,0 +1,38 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/samtarakajian/git/gen2ios/AUGenExport-v03/build/Release/AUGenExportFramework.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "AUGenExportFramework-Swift.h",
+          'external-contents': "/Users/samtarakajian/git/gen2ios/AUGenExport-v03/build/Release/AUGenExportFramework.framework/Versions/A/Headers/AUGenExportFramework-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "AUGenExportFramework.h",
+          'external-contents': "/Users/samtarakajian/git/gen2ios/AUGenExport-v03/OSX/AUGenExportFramework/AUGenExportFramework.h"
+        },
+        {
+          'type': 'file',
+          'name': "AUGenExportViewController.h",
+          'external-contents': "/Users/samtarakajian/git/gen2ios/AUGenExport-v03/OSX/AUGenExportFramework/AUGenExportViewController.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/samtarakajian/git/gen2ios/AUGenExport-v03/build/Release/AUGenExportFramework.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/samtarakajian/git/gen2ios/AUGenExport-v03/build/AUGenExport.build/Release/OSXAUGenExportFramework.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

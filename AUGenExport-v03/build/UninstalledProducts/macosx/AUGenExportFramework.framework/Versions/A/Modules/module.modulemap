@@ -1,0 +1,6 @@
+framework module AUGenExportFramework {
+  umbrella header "AUGenExportFramework.h"
+
+  export *
+  module * { export * }
+}

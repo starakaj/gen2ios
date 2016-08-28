@@ -1,0 +1,32 @@
+/*
+	Copyright (C) 2016 Apple Inc. All Rights Reserved.
+	See LICENSE.txt for this sample’s licensing information
+
+	Modified by Sam Tarakajian --- starakajian@gmail.com
+	
+	Abstract:
+	AUGenExportViewController is the app extension's principal class, responsible for creating both the audio unit and its view.
+*/
+
+import CoreAudioKit
+import AUGenExportFramework
+
+extension AUGenExportViewController: AUAudioUnitFactory {
+    /*
+        This implements the required `NSExtensionRequestHandling` protocol method.
+        Note that this may become unnecessary in the future, if `AUViewController`
+        implements the override.
+     */
+    public override func beginRequestWithExtensionContext(context: NSExtensionContext) { }
+    
+    /*
+        This implements the required `AUAudioUnitFactory` protocol method.
+        When this view controller is instantiated in an extension process, it
+        creates its audio unit.
+     */
+    public func createAudioUnitWithComponentDescription(componentDescription: AudioComponentDescription) throws -> AUAudioUnit {
+		audioUnit = try AUv3GenExport(componentDescription: componentDescription, options: [])
+        
+        return audioUnit!
+    }
+}
